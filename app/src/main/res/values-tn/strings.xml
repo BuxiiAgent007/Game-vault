@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameVault</string>
+    <string name="tagline">Sebolokelo sa gago sa metshameko</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">O amogelesegile</string>
+    <string name="create_account">Dira akhaonto ya gago</string>
+    <string name="email">Imeile</string>
+    <string name="password">Khunololamorogo</string>
+    <string name="confirm_password">Tlhomamisa khunololamorogo</string>
+    <string name="display_name">Leina la go bontsha</string>
+    <string name="login">Tsena</string>
+    <string name="register">Ingwadiše</string>
+    <string name="forgot_password">O lebetse khunololamorogo?</string>
+    <string name="or_continue_with">kgotsa tswelela ka</string>
+    <string name="sign_in_google">Tswelela ka Google</string>
+    <string name="no_account">Ga o na akhaonto? Ingwadiše</string>
+    <string name="have_account">O setse o na le akhaonto? Tsena</string>
+    <string name="reset_sent">Fa imeile e le gona, kgokaganyo ya go fetola e rometswe.</string>
+    <string name="fill_all_fields">Tsweetswee tlatsa dikarolo tsotlhe</string>
+    <string name="password_mismatch">Dikhunololamorogo ga di tshwane</string>
+    <string name="password_short">Khunololamorogo e tshwanetse go nna le ditlhaka di le 8</string>
+
+    <!-- Home -->
+    <string name="home_title">Batla</string>
+    <string name="search_hint">Batla metshameko...</string>
+    <string name="trending">Tse di golwang</string>
+    <string name="upcoming_releases">Ditshwaelo tse di tlang</string>
+    <string name="recommended_for_you">Tse di kgothaleditsweng go wena</string>
+    <string name="view_calendar">Bona khalenda</string>
+
+    <!-- Search -->
+    <string name="search_title">Batla</string>
+    <string name="filters">Ditlhopho</string>
+    <string name="all">Tsotlhe</string>
+    <string name="no_results">Ga go na metshameko e e fitlhetsweng. Leka ditlhopho tse dingwe.</string>
+    <string name="retry">Leka gape</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Tiro</string>
+    <string name="genre_rpg">RPG</string>
+    <string name="genre_shooter">Thupelo</string>
+    <string name="genre_adventure">Loeto</string>
+    <string name="genre_sports">Metshameko</string>
+    <string name="genre_strategy">Togamaano</string>
+
+    <!-- Collection -->
+    <string name="collection_title">Vault</string>
+    <string name="tab_playing">Go tshameka</string>
+    <string name="tab_finished">Go feditswe</string>
+    <string name="tab_wishlist">Lenaneo la ditakatso</string>
+    <string name="empty_collection">Ga go na sepe fano. Tlatsa metshameko go tswa go Batla kgotsa Batla.</string>
+    <string name="mark_playing">Tshwaya jaaka go Tshameka</string>
+    <string name="mark_finished">Tshwaya jaaka go Fedile</string>
+    <string name="add_wishlist">Tlatsa mo Lenaneong la Ditakatso</string>
+    <string name="add_backlog">Tlatsa mo Backlog</string>
+    <string name="remove_from_collection">Ntsha mo kgobokanyong</string>
+    <string name="progress_label">Kgatelopele</string>
+    <string name="hours_played">Diura tse di tshamekilweng</string>
+    <string name="your_rating">Tekanyetso ya gago</string>
+    <string name="write_review">Kwala tlhatlhobo (ga e patelediwe)</string>
+    <string name="save">Boloka</string>
+    <string name="done_badge">FEDILE</string>
+    <string name="offline_changes_pending">Diphetogo di tla romelwa fa o boela mo inthaneteng</string>
+
+    <!-- Detail -->
+    <string name="about">Ka ga</string>
+    <string name="screenshots">Ditshwantsho</string>
+    <string name="released_on">E tshwaetswe ka</string>
+    <string name="metacritic_label">Metacritic</string>
+    <string name="platforms_label">Dipolantere</string>
+    <string name="genres_label">Mefuta</string>
+    <string name="add_to_collection">Tlatsa mo kgobokanyong</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Khalenda</string>
+    <string name="empty_calendar">Ga go na ditshwaelo tse di tlang tse di fitlhetsweng.</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Porofaele</string>
+    <string name="badges">Ditshwao</string>
+    <string name="rank_vault_master">Mong wa Vault</string>
+    <string name="rank_collector">Mokgobokanyi wa Vault</string>
+    <string name="rank_apprentice">Moithuti wa Vault</string>
+    <string name="rank_newcomer">Moša</string>
+    <string name="stats_finished_year">Tse di fedileng ngwaga ono</string>
+    <string name="stats_total_collection">Metshameko mo kgobokanyong</string>
+    <string name="stats_hours">Diura tse di kwadilweng</string>
+    <string name="stats_top_genre">Mofuta o o tshamekilweng thata</string>
+    <string name="no_badges_yet">Ga o ise o nne le ditshwao - tswelela o tshameka go bona sa ntlha!</string>
+    <string name="badge_first_game">Dikgato tsa Ntlha</string>
+    <string name="badge_first_game_desc">O fedile motshameko wa gago wa ntlha</string>
+    <string name="badge_ten_games">Letsatsi la Boitlosobotse</string>
+    <string name="badge_ten_games_desc">O fedile metshameko e le 10</string>
+    <string name="badge_reviewer">Motlhatlhobi</string>
+    <string name="badge_reviewer_desc">O tlhatlhobile metshameko e le 5</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ditselašo</string>
+    <string name="section_account">Akhaonto</string>
+    <string name="section_preferences">Dikgetho</string>
+    <string name="language">Puo</string>
+    <string name="lang_en">Sekgoa</string>
+    <string name="lang_zu">isiZulu</string>
+    <string name="lang_tn">Setswana</string>
+    <string name="theme">Mosetlho</string>
+    <string name="theme_system">Tsamaiso</string>
+    <string name="theme_light">Go lesedi</string>
+    <string name="theme_dark">Go lefifi</string>
+    <string name="notifications">Ditsebiso</string>
+    <string name="notif_release">Dikitsiso tsa ditshwaelo</string>
+    <string name="notif_badges">Dikitsiso tsa ditshwao</string>
+    <string name="logout">Tswa</string>
+    <string name="profile_updated">Porofaele e ntšhwafaditswe</string>
+
+    <!-- Common -->
+    <string name="loading">Go a tsena...</string>
+    <string name="error_generic">Sengwe se sentse. Tsweetswee leka gape.</string>
+    <string name="error_network">Ga go na kgokagano ya inthanete. Re bontsha data e e bolokilweng.</string>
+    <string name="error_rawg_key">Senotlolo sa RAWG se a tlhaela. Tlatsa RAWG_API_KEY mo local.properties.</string>
+    <string name="cancel">Khansela</string>
+    <string name="ok">SIKA</string>
+</resources>

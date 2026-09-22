@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameVault</string>
+    <string name="tagline">Isitolo sakho semidlalo</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Wamukelekile futhi</string>
+    <string name="create_account">Dala i-akhawunti yakho</string>
+    <string name="email">I-imeyili</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="confirm_password">Qinisekisa iphasiwedi</string>
+    <string name="display_name">Igama lokubonisa</string>
+    <string name="login">Ngena</string>
+    <string name="register">Bhalisa</string>
+    <string name="forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="or_continue_with">noma qhubeka nge</string>
+    <string name="sign_in_google">Qhubeka nge-Google</string>
+    <string name="no_account">Awunayo i-akhawunti? Bhalisa</string>
+    <string name="have_account">Usunayo i-akhawunti? Ngena</string>
+    <string name="reset_sent">Uma i-imeyili ikhona, isixhumanisi sokuhlehlisa sithunyelwe.</string>
+    <string name="fill_all_fields">Sicela ugcwalise zonke izinkambu</string>
+    <string name="password_mismatch">Amaphasiwedi awafani</string>
+    <string name="password_short">Iphasiwedi kufanele ibe nezinhlamvu ezingu-8 okungenani</string>
+
+    <!-- Home -->
+    <string name="home_title">Thola</string>
+    <string name="search_hint">Dinga imidlalo...</string>
+    <string name="trending">Okudumile</string>
+    <string name="upcoming_releases">Okuzokhishwa</string>
+    <string name="recommended_for_you">Okunconyelwe wena</string>
+    <string name="view_calendar">Bona ikhalenda</string>
+
+    <!-- Search -->
+    <string name="search_title">Dinga</string>
+    <string name="filters">Izihlungi</string>
+    <string name="all">Konke</string>
+    <string name="no_results">Ayikho imidlalo etholakele. Zama ezinye izihlungi.</string>
+    <string name="retry">Zama futhi</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Isenzo</string>
+    <string name="genre_rpg">RPG</string>
+    <string name="genre_shooter">Ukudubula</string>
+    <string name="genre_adventure">Uhambo</string>
+    <string name="genre_sports">Ezemidlalo</string>
+    <string name="genre_strategy">Isu</string>
+
+    <!-- Collection -->
+    <string name="collection_title">Vault</string>
+    <string name="tab_playing">Iyadlalwa</string>
+    <string name="tab_finished">Kuqediwe</string>
+    <string name="tab_wishlist">Uhlu lofiso</string>
+    <string name="empty_collection">Akukho lutho lapha okwamanje. Engeza imidlalo kusuka ku-Dinga noma ku-Thola.</string>
+    <string name="mark_playing">Phawula njengokudlalwayo</string>
+    <string name="mark_finished">Phawula njengokuqediwe</string>
+    <string name="add_wishlist">Engeza kuhlu lofiso</string>
+    <string name="add_backlog">Engeza ku-backlog</string>
+    <string name="remove_from_collection">Susa eqoqweni</string>
+    <string name="progress_label">Inqubekela phambili</string>
+    <string name="hours_played">Amahora adlalwe</string>
+    <string name="your_rating">Isilinganiso sakho</string>
+    <string name="write_review">Bhala isibuyekezo (okukhethekile)</string>
+    <string name="save">Gcina</string>
+    <string name="done_badge">KUQEDIWE</string>
+    <string name="offline_changes_pending">Izinguquko zizovumelaniswa uma usuxhunyiwe</string>
+
+    <!-- Detail -->
+    <string name="about">Mayelana</string>
+    <string name="screenshots">Izithombe</string>
+    <string name="released_on">Kwakhishwa ngo</string>
+    <string name="metacritic_label">Metacritic</string>
+    <string name="platforms_label">Amapulatifomu</string>
+    <string name="genres_label">Izinhlobo</string>
+    <string name="add_to_collection">Engeza eqoqweni</string>
+
+    <!-- Calendar -->
+    <string name="calendar_title">Ikhalenda</string>
+    <string name="empty_calendar">Azikho izindatshana ezizayo ezitholakele.</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Iphrofayela</string>
+    <string name="badges">Amabheji</string>
+    <string name="rank_vault_master">Inkosi ye-Vault</string>
+    <string name="rank_collector">Umqoqi we-Vault</string>
+    <string name="rank_apprentice">Umfundi we-Vault</string>
+    <string name="rank_newcomer">Osha</string>
+    <string name="stats_finished_year">Okuqediwe kulo nyaka</string>
+    <string name="stats_total_collection">Imidlalo eqoqweni</string>
+    <string name="stats_hours">Amahora abhaliwe</string>
+    <string name="stats_top_genre">Uhlobo oludlalwa kakhulu</string>
+    <string name="no_badges_yet">Awunawo amabheji okwamanje - qhubeka udlale ukuze uthole eyokuqala!</string>
+    <string name="badge_first_game">Izinyathelo Zokuqala</string>
+    <string name="badge_first_game_desc">Uqede umdlalo wakho wokuqala</string>
+    <string name="badge_ten_games">Ishumi Lemidlalo</string>
+    <string name="badge_ten_games_desc">Uqede imidlalo engu-10</string>
+    <string name="badge_reviewer">Umgxeki</string>
+    <string name="badge_reviewer_desc">Ubukeze imidlalo engu-5</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="section_account">I-akhawunti</string>
+    <string name="section_preferences">Okukhethwayo</string>
+    <string name="language">Ulimi</string>
+    <string name="lang_en">isiNgisi</string>
+    <string name="lang_zu">isiZulu</string>
+    <string name="lang_tn">isiTswana</string>
+    <string name="theme">Isihloko</string>
+    <string name="theme_system">Isistimu</string>
+    <string name="theme_light">Okukhanyayo</string>
+    <string name="theme_dark">Okumnyama</string>
+    <string name="notifications">Izaziso</string>
+    <string name="notif_release">Izaziso zokukhishwa</string>
+    <string name="notif_badges">Izaziso zamabheji</string>
+    <string name="logout">Phuma</string>
+    <string name="profile_updated">Iphrofayela ibuyekezwe</string>
+
+    <!-- Common -->
+    <string name="loading">Iyalayisha...</string>
+    <string name="error_generic">Kukhona okungahambanga kahle. Sicela uzame futhi.</string>
+    <string name="error_network">Akukho ukuxhumana kwe-inthanethi. Sikhombisa idatha egciniwe.</string>
+    <string name="error_rawg_key">Ukhiye we-RAWG awukho. Engeza i-RAWG_API_KEY ku-local.properties.</string>
+    <string name="cancel">Khansela</string>
+    <string name="ok">KULUNGILE</string>
+</resources>
