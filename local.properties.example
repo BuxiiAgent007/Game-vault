@@ -1,0 +1,4 @@
+# Copy to local.properties on your development machine.
+RAWG_API_KEY=YOUR_RAWG_API_KEY
+CUSTOM_API_BASE_URL=https://africa-south1-gamevault.cloudfunctions.net/api/
+sdk.dir=C:\\Users\\YOUR_USERNAME\\AppData\\Local\\Android\\Sdk
