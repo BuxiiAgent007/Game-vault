@@ -121,9 +121,4 @@
     <string name="error_rawg_key">Ukhiye we-RAWG awukho. Engeza i-RAWG_API_KEY ku-local.properties.</string>
     <string name="cancel">Khansela</string>
     <string name="ok">KULUNGILE</string>
-    <string name="profile_image">Isithombe sephrofayela</string>
-    <string name="change_profile_photo">Thepha isithombe sakho ukuze ushintshe isithombe sephrofayela</string>
-    <string name="notification_channel_name">Izaziso ze-GameVault</string>
-    <string name="profile_image_updated">Isithombe sephrofayela silayishwe ngempumelelo</string>
-    <string name="profile_image_upload_failed">Ukulayishwa kwesithombe sephrofayela kwehlulekile. Sicela uzame futhi.</string>
 </resources>

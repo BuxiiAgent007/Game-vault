@@ -1,7 +1,6 @@
 package com.gamevault.app.work
 
 import android.content.Context
-import android.util.Log
 import androidx.hilt.work.HiltWorker
 import androidx.work.CoroutineWorker
 import androidx.work.ExistingWorkPolicy
@@ -39,7 +38,6 @@ class SyncWorker @AssistedInject constructor(
 ) : CoroutineWorker(context, params) {
 
     override suspend fun doWork(): Result {
-        Log.d(TAG, "Starting collection sync")
         val uid = auth.currentUser?.uid ?: return Result.retry()
         return try {
             val unsynced = collectionRepository.getUnsynced()
@@ -84,10 +82,8 @@ class SyncWorker @AssistedInject constructor(
                 remote
             )
             collectionRepository.applyResolved(merged)
-            Log.d(TAG, "Collection sync completed")
             Result.success()
         } catch (e: Exception) {
-            Log.e(TAG, "Collection sync failed; retrying", e)
             Result.retry()
         }
     }
@@ -98,7 +94,6 @@ class SyncWorker @AssistedInject constructor(
                // && com.gamevault.app.BuildConfig.CUSTOM_API_BASE_URL.startsWith("https")
 
     companion object {
-        private const val TAG = "GameVaultSync"
         private const val WORK_NAME = "collection_sync"
 
         fun enqueue(context: Context) {
