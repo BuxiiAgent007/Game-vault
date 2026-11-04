@@ -121,9 +121,4 @@
     <string name="error_rawg_key">Senotlolo sa RAWG se a tlhaela. Tlatsa RAWG_API_KEY mo local.properties.</string>
     <string name="cancel">Khansela</string>
     <string name="ok">SIKA</string>
-    <string name="profile_image">Setshwantsho sa profaele</string>
-    <string name="change_profile_photo">Tobetsa setshwantsho sa gago go fetola setshwantsho sa profaele</string>
-    <string name="notification_channel_name">Dikitsiso tsa GameVault</string>
-    <string name="profile_image_updated">Setshwantsho sa profaele se tsentswe ka katlego</string>
-    <string name="profile_image_upload_failed">Go tsenya setshwantsho sa profaele go paletse. Tsweetswee leka gape.</string>
 </resources>

@@ -2,12 +2,10 @@ package com.gamevault.app.data.repository
 
 import com.gamevault.app.data.model.AuthProvider
 import com.gamevault.app.data.model.UserProfile
-import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -24,8 +22,6 @@ class AuthRepository @Inject constructor(
     suspend fun login(email: String, password: String): Result<Unit> = runCatching {
         auth.signInWithEmailAndPassword(email, password).await()
         updateLastLogin()
-        registerFcmToken()
-        Log.d(TAG, "Email login successful")
     }
 
     suspend fun register(displayName: String, email: String, password: String): Result<Unit> =
@@ -44,8 +40,6 @@ class AuthRepository @Inject constructor(
                     createdAt = System.currentTimeMillis()
                 )
             )
-            registerFcmToken()
-            Log.d(TAG, "Email registration successful")
         }
 
     suspend fun signInWithGoogle(idToken: String): Result<Unit> = runCatching {
@@ -66,8 +60,6 @@ class AuthRepository @Inject constructor(
         } else {
             updateLastLogin()
         }
-        registerFcmToken()
-        Log.d(TAG, "Google sign-in successful")
     }
 
     suspend fun resetPassword(email: String): Result<Unit> = runCatching {
@@ -94,29 +86,6 @@ class AuthRepository @Inject constructor(
                 )
             )
             .await()
-    }
-
-    private suspend fun registerFcmToken() {
-        val uid = auth.currentUser?.uid ?: return
-        runCatching {
-            val token = FirebaseMessaging.getInstance().token.await()
-            firestore.collection("users").document(uid)
-                .collection("deviceTokens").document(token)
-                .set(
-                    mapOf(
-                        "token" to token,
-                        "platform" to "android",
-                        "updatedAt" to System.currentTimeMillis()
-                    )
-                )
-                .await()
-        }.onFailure {
-            Log.w(TAG, "Could not register FCM token", it)
-        }
-    }
-
-    private companion object {
-        const val TAG = "GameVaultAuth"
     }
 
     private suspend fun updateLastLogin() {

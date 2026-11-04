@@ -89,7 +89,6 @@ class CollectionRepository @Inject constructor(
         }
     }
 
-    /** Removes locally; the next sync reconciles the local collection with the server. */
     suspend fun remove(itemId: String) = dao.delete(itemId)
 
     suspend fun getUnsynced(): List<CollectionItem> = dao.getUnsynced()
