@@ -1,10 +1,7 @@
 package com.gamevault.app.ui.screens
 
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -45,7 +42,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.gamevault.app.R
-import coil.compose.AsyncImage
 import com.gamevault.app.ui.components.AppScaffold
 import com.gamevault.app.ui.components.SectionTitle
 import com.gamevault.app.ui.navigation.Routes
@@ -67,10 +63,6 @@ fun ProfileScreen(navController: NavHostController) {
     val viewModel: ProfileViewModel = hiltViewModel()
     val ui by viewModel.ui.collectAsState()
     val stats by viewModel.stats.collectAsState()
-
-    val imagePicker = rememberLauncherForActivityResult(
-        ActivityResultContracts.GetContent()
-    ) { uri -> uri?.let(viewModel::uploadProfileImage) }
 
     AppScaffold(currentRoute = Routes.PROFILE, navController = navController) { padding ->
         Column(
@@ -97,19 +89,8 @@ fun ProfileScreen(navController: NavHostController) {
                         color = DarkSurface,
                         shape = CircleShape,
                         border = BorderStroke(2.dp, PurplePrimary),
-                        modifier = Modifier
-                            .size(72.dp)
-                            .clip(CircleShape)
-                            .clickable { imagePicker.launch("image/*") }
                     ) {
                         Box(contentAlignment = Alignment.Center) {
-                            if (ui.profileImageUrl != null) {
-                                AsyncImage(
-                                    model = ui.profileImageUrl,
-                                    contentDescription = stringResource(R.string.profile_image),
-                                    modifier = Modifier.fillMaxSize()
-                                )
-                            } else {
                                 Icon(
                                     imageVector = Icons.Filled.Person,
                                     contentDescription = null,
@@ -118,7 +99,6 @@ fun ProfileScreen(navController: NavHostController) {
                                 )
                             }
                         }
-                    }
                     Spacer(Modifier.width(16.dp))
                     Column(Modifier.weight(1f)) {
                         Text(
@@ -132,12 +112,6 @@ fun ProfileScreen(navController: NavHostController) {
                             text = ui.email,
                             style = MaterialTheme.typography.bodySmall,
                             color = TextSecondary
-                        )
-                        Spacer(Modifier.height(4.dp))
-                        Text(
-                            text = stringResource(R.string.change_profile_photo),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = TealAccent
                         )
                         Spacer(Modifier.height(6.dp))
                         stats?.let {
@@ -272,15 +246,6 @@ fun ProfileScreen(navController: NavHostController) {
                         }
                     }
                 }
-            }
-
-            ui.messageRes?.let { messageRes ->
-                Text(
-                    text = stringResource(messageRes),
-                    color = TealAccent,
-                    style = MaterialTheme.typography.bodySmall,
-                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-                )
             }
 
             // ══════════════════════════════════════════════
