@@ -47,6 +47,7 @@ jobs:
         with:
           name: ${{ env.date_today }} - ${{ env.playstore_name }} - debug APK
           path: ${{ env.main_project_module }}/build/outputs/apk/debug/
+          if-no-files-found: ignore
 
       - name: Upload test reports (if any)
         if: always()
@@ -54,3 +55,4 @@ jobs:
         with:
           name: ${{ env.date_today }} - ${{ env.playstore_name }} - test reports
           path: ${{ env.main_project_module }}/build/reports/tests/
+          if-no-files-found: ignore
