@@ -96,6 +96,12 @@
     <string name="badge_reviewer">Umgxeki</string>
     <string name="badge_reviewer_desc">Ubukeze imidlalo engu-5</string>
 
+    <!-- Added missing profile image strings -->
+    <string name="profile_image">Isithombe sephrofayela</string>
+    <string name="change_profile_photo">Thepha ukushintsha isithombe</string>
+    <string name="profile_image_updated">Isithombe sephrofayela sibuyekezwe</string>
+    <string name="profile_image_upload_failed">Kwehlulekile ukulayisha isithombe</string>
+
     <!-- Settings -->
     <string name="settings_title">Izilungiselelo</string>
     <string name="section_account">I-akhawunti</string>

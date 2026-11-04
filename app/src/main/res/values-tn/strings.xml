@@ -96,6 +96,12 @@
     <string name="badge_reviewer">Motlhatlhobi</string>
     <string name="badge_reviewer_desc">O tlhatlhobile metshameko e le 5</string>
 
+    <!-- Added missing profile image strings -->
+    <string name="profile_image">Setshwantsho sa porofaele</string>
+    <string name="change_profile_photo">Tobetsa go fetola setshwantsho</string>
+    <string name="profile_image_updated">Setshwantsho sa porofaele se ntšhwafaditswe</string>
+    <string name="profile_image_upload_failed">Go paletswe ke go romela setshwantsho</string>
+
     <!-- Settings -->
     <string name="settings_title">Ditselašo</string>
     <string name="section_account">Akhaonto</string>

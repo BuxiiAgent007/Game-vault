@@ -22,9 +22,9 @@
     <string name="password_mismatch">Passwords do not match</string>
     <string name="password_short">Password must be at least 8 characters</string>
 
-
     <string name="discover_subtitle">Find your next adventure</string>
     <string name="see_all">See all</string>
+
     <!-- Home -->
     <string name="home_title">Discover</string>
     <string name="search_hint">Search games...</string>
@@ -98,6 +98,12 @@
     <string name="badge_ten_games_desc">Finished 10 games</string>
     <string name="badge_reviewer">Critic</string>
     <string name="badge_reviewer_desc">Reviewed 5 games</string>
+
+    <!-- Added missing profile image strings -->
+    <string name="profile_image">Profile Image</string>
+    <string name="change_profile_photo">Tap to change photo</string>
+    <string name="profile_image_updated">Profile image updated successfully</string>
+    <string name="profile_image_upload_failed">Failed to upload profile image</string>
 
     <!-- Settings -->
     <string name="settings_title">Settings</string>
